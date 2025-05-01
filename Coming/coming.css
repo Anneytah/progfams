@@ -1,0 +1,46 @@
+*{
+    /* margin: 0; */
+    box-sizing: border-box;
+}
+body{
+    /* width: 80%; */
+    margin: 0 auto;
+}
+.pix{
+    background-image: url(image/9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    /* border-radius: 0px 80px 80px 0px; */
+    text-align: center;
+    color: white;
+}
+.opacity{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(37, 37, 235, 0.7);
+    /* border-radius: 0px 80px 80px 0px; */
+
+
+    /* background: linear-gradient(
+        rgb(102, 0, 204, 0.7),
+        rgb(153, 51, 255, 0.7),
+        rgb(102, 102, 255, 0.7)
+      ),; */
+}
+input[type=email]{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid black;
+}
+input[type=submit]{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background: purple;
+    color: white;
+    border: none;
+}

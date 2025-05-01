@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="coming.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="bootstrap-5/css/bootstrap.min.css">
+</head>
+<body>
+    
+     <div class="container-fluid">
+        <div class="row ml-0">
+           <div class="col-md-6">
+              <div class="pix">
+                <div class="opacity">
+                    <h1 class="first pt-5">Coming Soon...</h1>
+                    <p class="third">We are working hard to deliver best possible experience. The <br> website is currently under construction. It goes live in:</p>
+                   <div class="d-flex justify-content-evenly">
+                    <div>
+                      <h3 id="demo" class=""></h3>
+
+                      <h3 id="demo" class=""> Days</h3>
+                    </div>
+                    <div>
+                      <h3 id="demo" class=""></h3>
+
+                      <h3 id="demo" class=""> Hours</h3>
+                    </div>
+                    <div>
+                      <h3 id="demo" class=""></h3>
+
+                      <h3 id="demo" class=""> Minutes</h3>
+                    </div>
+                    <div>
+                      <h3 id="demo" class=""></h3>
+
+                      <h3 id="demo" class=""> Seconds</h3>
+                    </div>
+                   </div>
+                    <p><i class="fa fa-phone"></i> 08037514469</p>
+                   <p><i class="fa fa-envelope"></i> Progfams@gmail.com</p>
+
+
+                   <div class="col-md-5 col-lg-4 ml-lg-0 m-auto">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                        class="fa fa-facebook-f"></i></a>
+          
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                        class="fa fa-twitter"></i></a>
+          
+                    <!-- Google -->
+                    <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                        class="fa fa-google"></i></a>
+          
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                        class="fa fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+
+           </div>
+           <div class="col-md-6 text-center " style="padding-top: 10em; padding-bottom: 10em;">
+            <h2>Notify me!</h2>
+            <p>Let me know when your website is on so I can start to order <br>
+                 goods. Here is my email address.</p>
+            <input type="email" name="" id="" placeholder="Email address"> <input type="submit" value="Notify me">
+        </div>
+     </div>
+
+ 
+
+     <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Sep 5, 2022 15:37:25").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get todays date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now an the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+        
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+
+
+</body>
+</html>
